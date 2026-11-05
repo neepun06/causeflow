@@ -1,0 +1,7 @@
+streamlit>=1.50
+pandas>=2.2
+altair>=5
+pypdf>=5
+rapidfuzz>=3
+google-genai>=1.30
+openpyxl>=3.1

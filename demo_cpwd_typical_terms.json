@@ -1,0 +1,19 @@
+{
+  "source": "Demo: typical CPWD-conditions works contract (entered by hand, not an AI extraction)",
+  "model": "manual",
+  "extracted_at": "2026-11-05",
+  "n_pages": null,
+  "pages_sent": [],
+  "chars_sent": 0,
+  "clauses": {
+    "mobilisation_advance": {"found": true, "values": {"percent": 10, "interest_rate_pct": 10, "recovery_start_pct": 10, "recovery_end_pct": 80}, "page": null, "clause_ref": "GCC Clause 10B", "quote": "", "confidence": "high", "note": "Typical CPWD value; applies only if Schedule F allows it"},
+    "retention": {"found": true, "values": {"percent_per_bill": 5, "cap_pct_of_contract": 5, "release_at_completion_pct": 0}, "page": null, "clause_ref": "GCC Clause 1A", "quote": "", "confidence": "high", "note": "Security deposit from running bills, held through the maintenance period"},
+    "billing_cycle": {"found": true, "values": {"months": 1}, "page": null, "clause_ref": "GCC Clause 7", "quote": "", "confidence": "high", "note": ""},
+    "payment_period": {"found": true, "values": {"days": 30}, "page": null, "clause_ref": "GCC Clause 7", "quote": "", "confidence": "medium", "note": "21 working days x 7/5 = 29.4, rounded to 30 calendar days"},
+    "liquidated_damages": {"found": true, "values": {"rate_pct": 1.5, "rate_unit": "per_month", "cap_pct": 10}, "page": null, "clause_ref": "GCC Clause 2", "quote": "", "confidence": "high", "note": ""},
+    "price_variation": {"found": false, "values": {"applicable": false, "coverage_pct": null}, "page": null, "clause_ref": "GCC Clause 10CC", "quote": "", "confidence": "high", "note": "10CC deleted in many short-duration works"},
+    "performance_bank_guarantee": {"found": true, "values": {"percent": 5}, "page": null, "clause_ref": "GCC Clause 1", "quote": "", "confidence": "high", "note": ""},
+    "defect_liability": {"found": true, "values": {"months": 12}, "page": null, "clause_ref": "GCC Clause 17", "quote": "", "confidence": "high", "note": ""}
+  },
+  "raw_response": ""
+}
