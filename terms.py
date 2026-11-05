@@ -79,7 +79,8 @@ def extraction_to_rows(extraction: dict) -> list[dict]:
         check = (cl.get("check") or {}).get("status", "manual entry" if extraction.get("model") == "manual" else "")
         rows.append(dict(
             param=key, clause=CLAUSE_SPECS[ck]["label"], term=label, value=float(val), unit=unit,
-            source=source, citation_check=check, quote=cl.get("quote") or "", verified=False,
+            source=source, citation_check=check, quote=cl.get("quote") or "",
+            verified=extraction.get("model") == "manual",  # hand-entered demo terms need no AI check
         ))
     return rows
 
