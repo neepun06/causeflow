@@ -1,0 +1,283 @@
+{
+  "source": "nhidcl.pdf",
+  "model": "gemini-3.6-flash",
+  "extracted_at": "2026-11-05T11:10:28+00:00",
+  "n_pages": 154,
+  "pages_sent": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    46,
+    47,
+    48,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    125,
+    126,
+    127,
+    128,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    150,
+    151,
+    152
+  ],
+  "chars_sent": 294232,
+  "clauses": {
+    "mobilisation_advance": {
+      "found": true,
+      "values": {
+        "percent": 10,
+        "interest_rate_pct": null,
+        "recovery_start_pct": 0,
+        "recovery_end_pct": 80
+      },
+      "page": 104,
+      "clause_ref": "Clause 19.2 (i)",
+      "quote": "The Authority shall make an interest-bearing advance payment (the \u201c Advance Payment\u201d) @ \u201c Bank Rate+ 3% \u201d, equal to 10 % (ten percent) of the Contract Price, exclusively for mobilisationexpenses.",
+      "confidence": "high",
+      "note": "Interest rate is specified as Bank Rate + 3% per annum. Deductions start from the first Stage Payment Statement and must be fully repaid before 80% of the Construction Period is over.",
+      "check": {
+        "status": "verbatim on cited page",
+        "score": 100,
+        "found_on": 104
+      }
+    },
+    "retention": {
+      "found": true,
+      "values": {
+        "percent_per_bill": 6,
+        "cap_pct_of_contract": 5,
+        "release_at_completion_pct": 100
+      },
+      "page": 54,
+      "clause_ref": "Clause 7.5",
+      "quote": "the Authority shalldeduct6%(sixpercent)thereof as guarantee money for performance of the obligations of the Contractor during the Construction Period (the \u201c Retention Money\u201d) subject to the condition that the maximum amount of Retention Money shall not exceed5% (five per cent) of the ContractPrice.",
+      "confidence": "high",
+      "note": "Retention money balance is refunded within 15 days of issue of the Completion Certificate.",
+      "check": {
+        "status": "near-match on cited page",
+        "score": 99,
+        "found_on": 54
+      }
+    },
+    "billing_cycle": {
+      "found": true,
+      "values": {
+        "months": 1
+      },
+      "page": 107,
+      "clause_ref": "Clause 19.4",
+      "quote": "The Contractor shall submit a statement (the \u201cStage Payment Statement\u201d) , in 3 (three) copies, by the 7th (seventh) day of the month to the Authority\u2019s Engineer",
+      "confidence": "high",
+      "note": "Monthly stage payment statements are raised by the 7th day of each month.",
+      "check": {
+        "status": "verbatim on cited page",
+        "score": 100,
+        "found_on": 107
+      }
+    },
+    "payment_period": {
+      "found": true,
+      "values": {
+        "days": 30
+      },
+      "page": 109,
+      "clause_ref": "Clause 19.9 (i) (a)",
+      "quote": "payment shall be made no later than 30 (thirty) days from the date of submission of the Stage Payment Statement by the Contractor to the Authority\u2019s Engineer",
+      "confidence": "high",
+      "note": null,
+      "check": {
+        "status": "verbatim on cited page",
+        "score": 100,
+        "found_on": 109
+      }
+    },
+    "liquidated_damages": {
+      "found": true,
+      "values": {
+        "rate_pct": 0.05,
+        "rate_unit": "per_day",
+        "cap_pct": 10
+      },
+      "page": 68,
+      "clause_ref": "Clause 10.3 (ii)",
+      "quote": "it shall pay Damages to the Authority of a sum calculated at the rate of 0.05% (zero point zero five percent) of the Contract Price for delay of each day",
+      "confidence": "high",
+      "note": "Clause 10.3 (iii) caps total damages at 10% of the Contract Price.",
+      "check": {
+        "status": "verbatim on cited page",
+        "score": 100,
+        "found_on": 68
+      }
+    },
+    "price_variation": {
+      "found": true,
+      "values": {
+        "applicable": true,
+        "coverage_pct": 85
+      },
+      "page": 110,
+      "clause_ref": "Clause 19.10 (iv) (d)",
+      "quote": "Price adjustment for changes in cost shall be paid in accordance with the following formulae:",
+      "confidence": "high",
+      "note": "Formula uses a 0.85 multiplier on work value, indicating 85% coverage of cost escalation.",
+      "check": {
+        "status": "near-match on cited page",
+        "score": 99,
+        "found_on": 110
+      }
+    },
+    "performance_bank_guarantee": {
+      "found": true,
+      "values": {
+        "percent": 3
+      },
+      "page": 52,
+      "clause_ref": "Clause 7.1 (i) (A)",
+      "quote": "Performance Security\u201d) for an amount equal to 3% (three percent) of its Bid Price.",
+      "confidence": "high",
+      "note": null,
+      "check": {
+        "status": "verbatim on cited page",
+        "score": 100,
+        "found_on": 52
+      }
+    },
+    "defect_liability": {
+      "found": true,
+      "values": {
+        "months": 36
+      },
+      "page": 89,
+      "clause_ref": "Clause 14.1 (i)",
+      "quote": "The Contractor shall maintain the Project Highway for a period of [36 months , corresponding to the Defects Liability Period, commencing from the date of the Completion Certificate",
+      "confidence": "high",
+      "note": "Corresponds to 3 years for slope protection works as defined in Clause 17.1 (i) (f).",
+      "check": {
+        "status": "verbatim on cited page",
+        "score": 100,
+        "found_on": 89
+      }
+    }
+  },
+  "raw_response": "{\n  \"clauses\": {\n    \"mobilisation_advance\": {\n      \"found\": true,\n      \"values\": {\n        \"percent\": 10,\n        \"interest_rate_pct\": null,\n        \"recovery_start_pct\": 0,\n        \"recovery_end_pct\": 80\n      },\n      \"page\": 104,\n      \"clause_ref\": \"Clause 19.2 (i)\",\n      \"quote\": \"The Authority shall make an interest-bearing advance payment (the \u201c Advance Payment\u201d) @ \u201c Bank Rate+ 3% \u201d, equal to 10 % (ten percent) of the Contract Price, exclusively for mobilisationexpenses.\",\n      \"confidence\": \"high\",\n      \"note\": \"Interest rate is specified as Bank Rate + 3% per annum. Deductions start from the first Stage Payment Statement and must be fully repaid before 80% of the Construction Period is over.\"\n    },\n    \"retention\": {\n      \"found\": true,\n      \"values\": {\n        \"percent_per_bill\": 6,\n        \"cap_pct_of_contract\": 5,\n        \"release_at_completion_pct\": 100\n      },\n      \"page\": 54,\n      \"clause_ref\": \"Clause 7.5\",\n      \"quote\": \"the Authority shalldeduct6%(sixpercent)thereof as guarantee money for performance of the obligations of the Contractor during the Construction Period (the \u201c Retention Money\u201d) subject to the condition that the maximum amount of Retention Money shall not exceed5% (five per cent) of the ContractPrice.\",\n      \"confidence\": \"high\",\n      \"note\": \"Retention money balance is refunded within 15 days of issue of the Completion Certificate.\"\n    },\n    \"billing_cycle\": {\n      \"found\": true,\n      \"values\": {\n        \"months\": 1\n      },\n      \"page\": 107,\n      \"clause_ref\": \"Clause 19.4\",\n      \"quote\": \"The Contractor shall submit a statement (the \u201cStage Payment Statement\u201d) , in 3 (three) copies, by the 7th (seventh) day of the month to the Authority\u2019s Engineer\",\n      \"confidence\": \"high\",\n      \"note\": \"Monthly stage payment statements are raised by the 7th day of each month.\"\n    },\n    \"payment_period\": {\n      \"found\": true,\n      \"values\": {\n        \"days\": 30\n      },\n      \"page\": 109,\n      \"clause_ref\": \"Clause 19.9 (i) (a)\",\n      \"quote\": \"payment shall be made no later than 30 (thirty) days from the date of submission of the Stage Payment Statement by the Contractor to the Authority\u2019s Engineer\",\n      \"confidence\": \"high\",\n      \"note\": null\n    },\n    \"liquidated_damages\": {\n      \"found\": true,\n      \"values\": {\n        \"rate_pct\": 0.05,\n        \"rate_unit\": \"per_day\",\n        \"cap_pct\": 10\n      },\n      \"page\": 68,\n      \"clause_ref\": \"Clause 10.3 (ii)\",\n      \"quote\": \"it shall pay Damages to the Authority of a sum calculated at the rate of 0.05% (zero point zero five percent) of the Contract Price for delay of each day\",\n      \"confidence\": \"high\",\n      \"note\": \"Clause 10.3 (iii) caps total damages at 10% of the Contract Price.\"\n    },\n    \"price_variation\": {\n      \"found\": true,\n      \"values\": {\n        \"applicable\": true,\n        \"coverage_pct\": 85\n      },\n      \"page\": 110,\n      \"clause_ref\": \"Clause 19.10 (iv) (d)\",\n      \"quote\": \"Price adjustment for changes in cost shall be paid in accordance with the following formulae:\",\n      \"confidence\": \"high\",\n      \"note\": \"Formula uses a 0.85 multiplier on work value, indicating 85% coverage of cost escalation.\"\n    },\n    \"performance_bank_guarantee\": {\n      \"found\": true,\n      \"values\": {\n        \"percent\": 3\n      },\n      \"page\": 52,\n      \"clause_ref\": \"Clause 7.1 (i) (A)\",\n      \"quote\": \"Performance Security\u201d) for an amount equal to 3% (three percent) of its Bid Price.\",\n      \"confidence\": \"high\",\n      \"note\": null\n    },\n    \"defect_liability\": {\n      \"found\": true,\n      \"values\": {\n        \"months\": 36\n      },\n      \"page\": 89,\n      \"clause_ref\": \"Clause 14.1 (i)\",\n      \"quote\": \"The Contractor shall maintain the Project Highway for a period of [36 months , corresponding to the Defects Liability Period, commencing from the date of the Completion Certificate\",\n      \"confidence\": \"high\",\n      \"note\": \"Corresponds to 3 years for slope protection works as defined in Clause 17.1 (i) (f).\"\n    }\n  }\n}"
+}

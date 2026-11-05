@@ -1,0 +1,175 @@
+{
+  "source": "IITM CPWD.pdf",
+  "model": "gemini-3.6-flash",
+  "extracted_at": "2026-11-05T11:05:19+00:00",
+  "n_pages": 27,
+  "pages_sent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "chars_sent": 62832,
+  "clauses": {
+    "mobilisation_advance": {
+      "found": false,
+      "values": {
+        "percent": null,
+        "interest_rate_pct": null,
+        "recovery_start_pct": null,
+        "recovery_end_pct": null
+      },
+      "page": null,
+      "clause_ref": null,
+      "quote": null,
+      "confidence": "high",
+      "note": "No mobilization advance clause found in the document.",
+      "check": {
+        "status": "not found by AI",
+        "score": 0,
+        "found_on": null
+      }
+    },
+    "retention": {
+      "found": true,
+      "values": {
+        "percent_per_bill": 5,
+        "cap_pct_of_contract": 5,
+        "release_at_completion_pct": null
+      },
+      "page": 7,
+      "clause_ref": "Clause 11",
+      "quote": "furnish by way of Security Deposit for the fulfillment of his contract, an amount equal to 5 % of the tendered value of the work. The Security d eposit will be collected by deductions from the running bill of the contractor",
+      "confidence": "high",
+      "note": "Security Deposit is 5% of tendered value, collected via deductions from running bills.",
+      "check": {
+        "status": "verbatim on cited page",
+        "score": 100,
+        "found_on": 7
+      }
+    },
+    "billing_cycle": {
+      "found": false,
+      "values": {
+        "months": null
+      },
+      "page": null,
+      "clause_ref": null,
+      "quote": null,
+      "confidence": "high",
+      "note": "Clause 7 (Page 12) specifies an interim payment threshold of Rs. 55,000 gross work done, but does not specify a periodic billing cycle in months.",
+      "check": {
+        "status": "not found by AI",
+        "score": 0,
+        "found_on": null
+      }
+    },
+    "payment_period": {
+      "found": false,
+      "values": {
+        "days": null
+      },
+      "page": null,
+      "clause_ref": null,
+      "quote": null,
+      "confidence": "high",
+      "note": "No payment period (timeframe for employer to pay certified bills) is specified.",
+      "check": {
+        "status": "not found by AI",
+        "score": 0,
+        "found_on": null
+      }
+    },
+    "liquidated_damages": {
+      "found": false,
+      "values": {
+        "rate_pct": null,
+        "rate_unit": null,
+        "cap_pct": null
+      },
+      "page": null,
+      "clause_ref": null,
+      "quote": null,
+      "confidence": "high",
+      "note": "Page 12 Clause 2 identifies the authority for fixing compensation under clause 2, but specific rate and cap percentages for delay damages are not specified.",
+      "check": {
+        "status": "not found by AI",
+        "score": 0,
+        "found_on": null
+      }
+    },
+    "price_variation": {
+      "found": true,
+      "values": {
+        "applicable": false,
+        "coverage_pct": null
+      },
+      "page": 11,
+      "clause_ref": "CLAUSE \u2013 10 CC",
+      "quote": "Clause 10 CC of General Conditions of Contract is not applicable to this work.",
+      "confidence": "high",
+      "note": "Clause 10 CC price escalation is explicitly marked as not applicable.",
+      "check": {
+        "status": "verbatim on cited page",
+        "score": 100,
+        "found_on": 11
+      }
+    },
+    "performance_bank_guarantee": {
+      "found": false,
+      "values": {
+        "percent": null
+      },
+      "page": null,
+      "clause_ref": null,
+      "quote": null,
+      "confidence": "high",
+      "note": "Clause 1 (Page 12) states time allowed for submission of Performance Guarantee (7 days), but does not state the percentage of contract value.",
+      "check": {
+        "status": "not found by AI",
+        "score": 0,
+        "found_on": null
+      }
+    },
+    "defect_liability": {
+      "found": false,
+      "values": {
+        "months": null
+      },
+      "page": null,
+      "clause_ref": null,
+      "quote": null,
+      "confidence": "high",
+      "note": "No specific defect liability period in months is stated in the provided pages.",
+      "check": {
+        "status": "not found by AI",
+        "score": 0,
+        "found_on": null
+      }
+    }
+  },
+  "raw_response": "{\n  \"clauses\": {\n    \"mobilisation_advance\": {\n      \"found\": false,\n      \"values\": {\n        \"percent\": null,\n        \"interest_rate_pct\": null,\n        \"recovery_start_pct\": null,\n        \"recovery_end_pct\": null\n      },\n      \"page\": null,\n      \"clause_ref\": null,\n      \"quote\": null,\n      \"confidence\": \"high\",\n      \"note\": \"No mobilization advance clause found in the document.\"\n    },\n    \"retention\": {\n      \"found\": true,\n      \"values\": {\n        \"percent_per_bill\": 5,\n        \"cap_pct_of_contract\": 5,\n        \"release_at_completion_pct\": null\n      },\n      \"page\": 7,\n      \"clause_ref\": \"Clause 11\",\n      \"quote\": \"furnish by way of Security Deposit for the fulfillment of his contract, an amount equal to 5 % of the tendered value of the work. The Security d eposit will be collected by deductions from the running bill of the contractor\",\n      \"confidence\": \"high\",\n      \"note\": \"Security Deposit is 5% of tendered value, collected via deductions from running bills.\"\n    },\n    \"billing_cycle\": {\n      \"found\": false,\n      \"values\": {\n        \"months\": null\n      },\n      \"page\": null,\n      \"clause_ref\": null,\n      \"quote\": null,\n      \"confidence\": \"high\",\n      \"note\": \"Clause 7 (Page 12) specifies an interim payment threshold of Rs. 55,000 gross work done, but does not specify a periodic billing cycle in months.\"\n    },\n    \"payment_period\": {\n      \"found\": false,\n      \"values\": {\n        \"days\": null\n      },\n      \"page\": null,\n      \"clause_ref\": null,\n      \"quote\": null,\n      \"confidence\": \"high\",\n      \"note\": \"No payment period (timeframe for employer to pay certified bills) is specified.\"\n    },\n    \"liquidated_damages\": {\n      \"found\": false,\n      \"values\": {\n        \"rate_pct\": null,\n        \"rate_unit\": null,\n        \"cap_pct\": null\n      },\n      \"page\": null,\n      \"clause_ref\": null,\n      \"quote\": null,\n      \"confidence\": \"high\",\n      \"note\": \"Page 12 Clause 2 identifies the authority for fixing compensation under clause 2, but specific rate and cap percentages for delay damages are not specified.\"\n    },\n    \"price_variation\": {\n      \"found\": true,\n      \"values\": {\n        \"applicable\": false,\n        \"coverage_pct\": null\n      },\n      \"page\": 11,\n      \"clause_ref\": \"CLAUSE \u2013 10 CC\",\n      \"quote\": \"Clause 10 CC of General Conditions of Contract is not applicable to this work.\",\n      \"confidence\": \"high\",\n      \"note\": \"Clause 10 CC price escalation is explicitly marked as not applicable.\"\n    },\n    \"performance_bank_guarantee\": {\n      \"found\": false,\n      \"values\": {\n        \"percent\": null\n      },\n      \"page\": null,\n      \"clause_ref\": null,\n      \"quote\": null,\n      \"confidence\": \"high\",\n      \"note\": \"Clause 1 (Page 12) states time allowed for submission of Performance Guarantee (7 days), but does not state the percentage of contract value.\"\n    },\n    \"defect_liability\": {\n      \"found\": false,\n      \"values\": {\n        \"months\": null\n      },\n      \"page\": null,\n      \"clause_ref\": null,\n      \"quote\": null,\n      \"confidence\": \"high\",\n      \"note\": \"No specific defect liability period in months is stated in the provided pages.\"\n    }\n  }\n}"
+}
