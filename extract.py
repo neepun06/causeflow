@@ -154,7 +154,7 @@ def parse_json(text: str) -> dict:
     return json.loads(text[start:end + 1])
 
 
-def call_gemini(prompt: str, api_key: str, model: str = DEFAULT_MODEL) -> str:
+def _call_once(prompt: str, api_key: str, model: str) -> str:
     from google import genai
     from google.genai import types
 
@@ -167,6 +167,33 @@ def call_gemini(prompt: str, api_key: str, model: str = DEFAULT_MODEL) -> str:
     if not resp.text:
         raise RuntimeError("Gemini returned an empty response (possibly blocked or over quota).")
     return resp.text
+
+
+def _transient(err: Exception) -> bool:
+    msg = str(err)
+    return any(code in msg for code in ("503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "500", "INTERNAL", "overloaded"))
+
+
+def call_gemini(prompt: str, api_key: str, model: str = DEFAULT_MODEL, waits=(3, 8, 15), sleep=None) -> tuple[str, str]:
+    """Try the chosen model, then the other models, retrying each on overload errors.
+    Returns (response text, model that answered)."""
+    import time
+    sleep = sleep or time.sleep
+    order = [model] + [m for m in MODEL_CHOICES if m != model]
+    last = None
+    for m in order:
+        for i in range(len(waits) + 1):
+            try:
+                return _call_once(prompt, api_key, m), m
+            except Exception as e:  # noqa: BLE001
+                last = e
+                if not _transient(e):
+                    if "not found" in str(e).lower() or "404" in str(e):
+                        break  # model id unknown to this key: try the next model
+                    raise
+                if i < len(waits):
+                    sleep(waits[i])
+    raise RuntimeError(f"All Gemini models are busy or unavailable right now. Last error: {last}")
 
 
 def list_models(api_key: str) -> list[str]:
@@ -213,7 +240,7 @@ def extract(pdf_bytes: bytes, file_name: str, api_key: str, model: str = DEFAULT
     if n_chars < 200 * max(len(pages), 1) * 0.1:
         raise ValueError("Very little text found. This looks like a scanned PDF; run OCR first (known limitation).")
     context, sent_pages = build_context(pages)
-    raw = call_gemini(build_prompt(context), api_key, model)
+    raw, model = call_gemini(build_prompt(context), api_key, model)
     data = parse_json(raw)
     clauses = data.get("clauses", data)
     for key in CLAUSE_SPECS:
